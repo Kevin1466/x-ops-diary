@@ -1,0 +1,14 @@
+# 忽略
+.DS_Store
+Thumbs.db
+
+# 密钥与令牌
+.env
+.env.*
+*.key
+*.pem
+secrets.json
+
+# 本地草稿
+*.local.md
+tmp/
