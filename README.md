@@ -2,7 +2,18 @@
 
 一个 AI 垂类 X（Twitter）账号的**公开运营日记**：内容策略、工具搭建、数据变化、复盘实验。
 
+> Building in public: an AI-focused X account, documented daily — what I try, what breaks, and what the numbers say.
+
 公开的原因很简单——我在这件事上没有先验优势，把过程写出来，一来逼自己复盘，二来认识同路人。
+
+## 怎么读
+
+| 想知道 | 看这里 |
+|---|---|
+| 我每天干了什么、踩了什么坑 | [`diary/`](diary/) 按月一篇 |
+| 数据长什么样 | [`data/metrics.csv`](data/metrics.csv) 每天一行 |
+| 方法论 | [`playbooks/`](playbooks/) 钩子库、周复盘模板 |
+| 为什么这么选 | [`docs/decisions.md`](docs/decisions.md) 关键决策记录 |
 
 ## 我在做什么
 
@@ -21,24 +32,25 @@
 ## 目录
 
 ```
-diary/        每日运营日记（主产物）
-playbooks/    可复用的方法论：选题、钩子、复盘模板
-data/         数据快照（粉丝、互动、发布记录）
+diary/        按月一个 md，每天一节
+playbooks/    可复用的方法论：钩子句式、周复盘模板
+data/         metrics.csv（每天一行）+ 字段说明
+docs/         关键决策记录（ADR 风格）
 ```
 
 ## 更新节奏
 
-工作日每天一篇，周末不定。每篇固定四段：**今天做了什么 / 关键决策 / 踩坑 / 数据与明天**。
+- **日记**：工作日每天一节，写进当月的 `diary/YYYY-MM.md`；周末不定
+- **数据**：每天一行，抄 4 个数字，30 秒
+- **复盘**：每周日填一次 `playbooks/review.md`
+
+每节日记固定四段：**今天做了什么 / 关键决策 / 踩坑 / 数据与明天**。
 
 ## 免责
 
 - 这里记录的是真实过程，包含大量失败和返工，不构成任何建议。
 - 不包含他人隐私、私信内容或未公开信息。
 - 不含任何 API Key、Cookie、令牌。
-
-## 相关
-
-- 日记从 2026-11-05 开始。
 
 ## License
 
